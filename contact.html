@@ -1,55 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Wissam Salloum Photography</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-    <div id="preloader">
-        <div class="spinner"></div>
+  <header class="main-header">
+    <div class="container">
+      <div class="logo">Wissam Salloum</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="contact-section">
+    <div class="container">
+      <h1>Contact Me</h1>
+      <p>Ready to start your project or have a question? Reach out below.</p>
+      <form class="contact-form" action="mailto:wissam.a.salloum@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>© 2025 Wissam Salloum. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://instagram.com/wissam.jpg" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:wissam.a.salloum@gmail.com"><i class="fas fa-envelope"></i></a>
       </div>
-<header>
-  <h1>Wissam Salloum Photography</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-<section class="contact fade-in">
-  <h2>Contact Me</h2>
-  <p>If you'd like to work together or have any questions, feel free to reach out!</p>
-
-  <form action="https://formspree.io/f/your-form-id" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-
-  <p>Or email me directly at <a href="mailto:wissam.a.salloum@gmail.com">wissam.a.salloum@gmail.com</a></p>
-</section>
-
-<footer>
-    <p>© 2025 Wissam Salloum. All rights reserved.</p>
-    <div class="socials">
-        <a href="https://instagram.com/wissam.jpg" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="mailto:wissam.a.salloum@gmail.com">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <!-- You can add more icons here -->
-      </div>
+    </div>
   </footer>
-<script src="js/script.js"></script>
-<a href="#" class="back-to-top">↑</a>
+
+  <a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
+  <script src="js/script.js"></script>
 </body>
 </html>

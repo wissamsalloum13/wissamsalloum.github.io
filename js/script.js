@@ -1,4 +1,4 @@
-// Fade-in effect on scroll
+/* Fade-in effect on scroll */
 const faders = document.querySelectorAll('.fade-in');
 
 const appearOptions = {
@@ -20,14 +20,13 @@ faders.forEach(fader => {
   appearOnScroll.observe(fader);
 });
 
-
-// Preloader
+/* Preloader */
 window.addEventListener('load', function() {
-    const preloader = document.getElementById('preloader');
-    preloader.style.display = 'none';
-  });
+  const preloader = document.getElementById('preloader');
+  preloader.style.display = 'none';
+});
 
-  // Back to Top Button
+/* Back to Top Button */
 const backToTopButton = document.querySelector('.back-to-top');
 
 window.addEventListener('scroll', () => {
