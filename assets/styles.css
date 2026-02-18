@@ -134,6 +134,15 @@ img {
   max-width: 56ch;
 }
 
+/* Slightly larger intro copy on the About page hero text block */
+.hero .about-intro p {
+  font-size: 1.08rem;
+}
+
+.hero .about-intro h1 {
+  margin-bottom: 24px;
+}
+
 .button-row {
   display: flex;
   flex-wrap: wrap;
@@ -176,7 +185,8 @@ img {
   gap: 14px;
 }
 
-.hero-cell {
+.hero-cell,
+.hero-card {
   margin: 0;
   position: relative;
   border-radius: 16px;
@@ -185,7 +195,8 @@ img {
   box-shadow: var(--shadow);
 }
 
-.hero-cell img {
+.hero-cell img,
+.hero-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -195,6 +206,11 @@ img {
 .hero-cell-b { grid-area: b; min-height: 230px; }
 .hero-cell-c { grid-area: c; min-height: 230px; }
 .hero-cell-d { grid-area: d; min-height: 230px; }
+.hero-card { min-height: 360px; }
+.hero > .hero-card {
+  aspect-ratio: 2 / 3;
+  min-height: unset;
+}
 
 .section {
   margin-top: 52px;
@@ -569,6 +585,10 @@ img {
   .hero-cell-b,
   .hero-cell-c,
   .hero-cell-d { min-height: 200px; }
+  .hero-card { min-height: 300px; }
+  .hero > .hero-card {
+    min-height: unset;
+  }
 
   .grid-3,
   .grid-2 {
