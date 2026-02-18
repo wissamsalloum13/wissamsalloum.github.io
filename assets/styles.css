@@ -95,6 +95,27 @@ img {
   color: var(--header-muted);
 }
 
+.nav-toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #2a303b;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  width: 18px;
+  height: 2px;
+  background: #f3f5f8;
+  border-radius: 999px;
+}
+
 .nav-links a {
   padding: 8px 10px;
   border-radius: 999px;
@@ -569,6 +590,10 @@ img {
 }
 
 @media (max-width: 900px) {
+  .nav-toggle {
+    display: inline-flex;
+  }
+
   .hero {
     grid-template-columns: 1fr;
   }
