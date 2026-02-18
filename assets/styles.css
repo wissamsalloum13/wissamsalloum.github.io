@@ -236,6 +236,16 @@ img {
   color: var(--muted);
 }
 
+.type-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  border: 1px solid var(--line);
+}
+
 .quote-card p {
   font-style: italic;
   color: #3d4654;
