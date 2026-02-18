@@ -445,6 +445,26 @@ img {
 .faq-item summary {
   cursor: pointer;
   font-weight: 600;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::before {
+  content: "▸";
+  display: inline-block;
+  width: 16px;
+  color: var(--accent-deep);
+  transition: transform 0.2s ease;
+}
+
+.faq-item[open] summary::before {
+  transform: rotate(90deg);
 }
 
 .faq-item p {
