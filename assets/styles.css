@@ -132,6 +132,8 @@ img {
   gap: 14px;
   font-size: 0.95rem;
   color: var(--header-muted);
+  font-family: "Noe Display", "Playfair Display", Georgia, serif;
+  font-weight: 700;
 }
 
 .nav-toggle {
