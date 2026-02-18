@@ -34,6 +34,7 @@ async function optimizeImage(filePath) {
   const ext = path.extname(filePath).toLowerCase();
   const input = sharp(filePath, { failOn: "none" });
   const metadata = await input.metadata();
+  const tempPath = `${filePath}.tmp`;
 
   let pipeline = sharp(filePath, { failOn: "none" }).rotate();
 
@@ -42,16 +43,19 @@ async function optimizeImage(filePath) {
   }
 
   if (ext === ".jpg" || ext === ".jpeg") {
-    await pipeline.jpeg({ quality: JPEG_QUALITY, mozjpeg: true }).toFile(filePath);
+    await pipeline.jpeg({ quality: JPEG_QUALITY, mozjpeg: true }).toFile(tempPath);
+    await fs.rename(tempPath, filePath);
     return;
   }
 
   if (ext === ".png") {
-    await pipeline.png({ quality: PNG_QUALITY, compressionLevel: 9, palette: true }).toFile(filePath);
+    await pipeline.png({ quality: PNG_QUALITY, compressionLevel: 9, palette: true }).toFile(tempPath);
+    await fs.rename(tempPath, filePath);
     return;
   }
 
-  await pipeline.webp({ quality: WEBP_QUALITY }).toFile(filePath);
+  await pipeline.webp({ quality: WEBP_QUALITY }).toFile(tempPath);
+  await fs.rename(tempPath, filePath);
 }
 
 async function main() {
