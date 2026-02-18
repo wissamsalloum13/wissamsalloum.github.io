@@ -5,7 +5,8 @@ const navMenu = document.querySelector('.nav-links');
 
 navLinks.forEach((link) => {
   const file = link.getAttribute('href');
-  if (file === path) {
+  const isPortfolioChild = file === 'portfolio.html' && path.startsWith('portfolio-');
+  if (file === path || isPortfolioChild) {
     link.classList.add('active');
   }
 });
