@@ -1,52 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Wissam Salloum Photography</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Wissam Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <header class="main-header">
-    <div class="container">
-      <div class="logo">Wissam Salloum</div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="assets/logo.png" alt="Wissam Photography logo" onerror="this.style.display='none'">
+        <span class="brand-text">Wissam Photography</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" data-nav>Home</a>
+        <a href="portfolio.html" data-nav>Portfolio</a>
+        <a href="sessions.html" data-nav>Sessions</a>
+        <a href="about.html" data-nav>About</a>
+        <a href="contact.html" data-nav>Contact</a>
+        <a href="booking.html" data-nav>Booking</a>
       </nav>
     </div>
   </header>
 
-  <section class="contact-section">
-    <div class="container">
-      <h1>Contact Me</h1>
-      <p>Ready to start your project or have a question? Reach out below.</p>
-      <form class="contact-form" action="mailto:wissam.a.salloum@gmail.com" method="POST" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn-primary">Send Message</button>
-      </form>
-    </div>
-  </section>
+  <main class="page">
+    <section class="section">
+      <h2 class="reveal">Contact</h2>
+      <p class="lead reveal delay-1">Use this form for general questions, availability checks, and collaboration requests.</p>
+      <div class="grid grid-2">
+        <article class="card reveal delay-1">
+          <h3>Direct Contact</h3>
+          <p>Email: <a href="mailto:wissam.a.salloum@gmail.com">wissam.a.salloum@gmail.com</a></p>
+          <p>Response time: within 24 hours on weekdays.</p>
+          <p>For session requests, you can also use the booking page.</p>
+        </article>
 
-  <footer class="main-footer">
-    <div class="container">
-      <p>© 2025 Wissam Salloum. All rights reserved.</p>
-      <div class="social-icons">
-        <a href="https://instagram.com/wissam.jpg" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:wissam.a.salloum@gmail.com"><i class="fas fa-envelope"></i></a>
+        <article class="card reveal delay-2">
+          <form class="form" action="https://formsubmit.co/wissam.a.salloum@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New Contact Message - Wissam Photography Website">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <div>
+              <label for="contact-name">Name</label>
+              <input id="contact-name" name="name" type="text" required>
+            </div>
+            <div>
+              <label for="contact-email">Email</label>
+              <input id="contact-email" name="email" type="email" required>
+            </div>
+            <div>
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" required></textarea>
+            </div>
+            <button class="button primary" type="submit">Send Message</button>
+          </form>
+        </article>
       </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-wrap">
+      <div>Wissam Photography</div>
+      <div><a href="mailto:wissam.a.salloum@gmail.com">wissam.a.salloum@gmail.com</a></div>
     </div>
   </footer>
 
-  <a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
-  <script src="js/script.js"></script>
+  <script src="assets/main.js"></script>
 </body>
 </html>

@@ -1,67 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wissam Salloum Photography</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wissam Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <header class="main-header">
-    <div class="container">
-      <div class="logo">Wissam Salloum</div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="assets/logo.png" alt="Wissam Photography logo" onerror="this.style.display='none'">
+        <span class="brand-text">Wissam Photography</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" data-nav>Home</a>
+        <a href="portfolio.html" data-nav>Portfolio</a>
+        <a href="sessions.html" data-nav>Sessions</a>
+        <a href="about.html" data-nav>About</a>
+        <a href="contact.html" data-nav>Contact</a>
+        <a href="booking.html" data-nav>Booking</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero-banner">
-    <div class="container">
-      <h1>Crafting Stories Through The Lens</h1>
-      <p>Specialising in automotive, lifestyle, and commercial photography</p>
-      <a href="portfolio.html" class="btn-primary">Explore Portfolio</a>
-    </div>
-  </section>
-
-  <section class="intro-gallery">
-    <div class="container">
-      <h2>Featured Work</h2>
-      <div class="grid-gallery">
-        <img src="images/sample1.jpg" alt="Photo sample 1">
-        <img src="images/sample2.jpg" alt="Photo sample 2">
-        <img src="images/sample3.jpg" alt="Photo sample 3">
+  <main class="page">
+    <section class="hero">
+      <div class="reveal">
+        <h1>Photography that feels like your favorite memory.</h1>
+        <p>I specialize in portraits, automotive, and lifestyle photography. Every session is built around your vision, your style, and the right light.</p>
+        <div class="button-row">
+          <a class="button primary" href="booking.html">Book Your Session</a>
+          <a class="button ghost" href="portfolio.html">View Portfolio</a>
+        </div>
       </div>
-      <a href="portfolio.html" class="btn-secondary">See More</a>
-    </div>
-  </section>
-
-  <section class="cta-section">
-    <div class="container">
-      <h2>Book Your Session</h2>
-      <p>Let’s work together to create something memorable.</p>
-      <a href="contact.html" class="btn-primary">Get in Touch</a>
-    </div>
-  </section>
-
-  <footer class="main-footer">
-    <div class="container">
-      <p>© 2025 Wissam Salloum. All rights reserved.</p>
-      <div class="social-icons">
-        <a href="https://instagram.com/wissam.jpg" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:wissam.a.salloum@gmail.com"><i class="fas fa-envelope"></i></a>
+      <div class="hero-card reveal delay-1">
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80" alt="Luxury automotive photo at sunset">
       </div>
+    </section>
+
+    <section class="section">
+      <h2 class="reveal">What I Photograph</h2>
+      <p class="lead reveal delay-1">Signature work focused on portraits, automotive visuals, lifestyle storytelling, architecture, and landscape scenes.</p>
+      <div class="grid grid-3">
+        <article class="card reveal delay-1">
+          <h3>Portraits</h3>
+          <p>Clean, expressive portrait sessions with natural direction and polished editorial finish.</p>
+        </article>
+        <article class="card reveal delay-2">
+          <h3>Automotive</h3>
+          <p>Dynamic car photography built for owners, dealerships, and brands that need premium visuals.</p>
+        </article>
+        <article class="card reveal delay-3">
+          <h3>Lifestyle</h3>
+          <p>Story-driven imagery capturing everyday movement, atmosphere, and authentic personality.</p>
+        </article>
+        <article class="card reveal delay-1">
+          <h3>Architecture</h3>
+          <p>Clean lines and balanced compositions for homes, commercial spaces, and hospitality properties.</p>
+        </article>
+        <article class="card reveal delay-2">
+          <h3>Landscape</h3>
+          <p>Atmospheric environmental imagery that captures scale, light, and natural texture.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="reveal">Featured Frames</h2>
+      <p class="lead reveal delay-1">A quick look at recent highlights. Explore the full gallery on the portfolio page.</p>
+      <div class="grid grid-3 featured-grid">
+        <figure class="photo reveal delay-1">
+          <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80" alt="Portrait in natural light">
+          <figcaption>Portrait</figcaption>
+        </figure>
+        <figure class="photo reveal delay-2">
+          <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=80" alt="Sports car automotive photo">
+          <figcaption>Automotive</figcaption>
+        </figure>
+        <figure class="photo reveal delay-3">
+          <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80" alt="Lifestyle street portrait">
+          <figcaption>Lifestyle</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="reveal">The Experience</h2>
+      <p class="lead reveal delay-1">A simple and guided process from first message to final gallery delivery.</p>
+      <div class="grid grid-2">
+        <article class="card reveal delay-1">
+          <h3>Pre-Session Planning</h3>
+          <p>We align on mood, location, wardrobe, timing, and final use before the camera comes out.</p>
+        </article>
+        <article class="card reveal delay-2">
+          <h3>On-Shoot Direction</h3>
+          <p>I give clear prompts and posing guidance so sessions feel natural and never forced.</p>
+        </article>
+        <article class="card reveal delay-1">
+          <h3>Professional Retouching</h3>
+          <p>Every selected image is hand-edited for color, light, and consistency while keeping skin and details natural.</p>
+        </article>
+        <article class="card reveal delay-2">
+          <h3>Fast Delivery</h3>
+          <p>You receive a private online gallery with high-resolution downloads and easy sharing.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="reveal">What Clients Say</h2>
+      <div class="grid grid-3">
+        <article class="card quote-card reveal delay-1">
+          <p>"Wissam made the entire shoot easy and organized. The final portraits looked premium and still felt like us."</p>
+          <h3>Portrait Client</h3>
+        </article>
+        <article class="card quote-card reveal delay-2">
+          <p>"The automotive set came out exactly how I imagined. Strong angles, clean edits, and quick turnaround."</p>
+          <h3>Automotive Client</h3>
+        </article>
+        <article class="card quote-card reveal delay-3">
+          <p>"Great communication from start to finish. Lifestyle photos felt natural and elevated at the same time."</p>
+          <h3>Lifestyle Client</h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="reveal">Frequently Asked Questions</h2>
+      <div class="faq-list reveal delay-1">
+        <details class="faq-item" open>
+          <summary>How far in advance should I book?</summary>
+          <p>For best date availability, book 2-4 weeks ahead for portraits and lifestyle, and 3-6 weeks ahead for automotive campaigns.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you help with location ideas?</summary>
+          <p>Yes. You receive location options based on your style, lighting preferences, and intended final look.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can I request extra edited photos?</summary>
+          <p>Absolutely. Additional edited images are available as add-ons after gallery delivery.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section cta-panel reveal delay-1">
+      <h2>Ready To Create Your Session?</h2>
+      <p>Tell me what you want to shoot and I will help you plan the full concept, location, and final deliverables.</p>
+      <div class="button-row">
+        <a class="button primary" href="booking.html">Book Now</a>
+        <a class="button ghost" href="sessions.html">View Full Session Details</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-wrap">
+      <div>Wissam Photography</div>
+      <div><a href="mailto:wissam.a.salloum@gmail.com">wissam.a.salloum@gmail.com</a></div>
     </div>
   </footer>
 
-  <a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
-  <script src="js/script.js"></script>
+  <script src="assets/main.js"></script>
 </body>
 </html>

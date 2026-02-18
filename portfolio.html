@@ -1,54 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | Wissam Salloum Photography</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Wissam Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <header class="main-header">
-    <div class="container">
-      <div class="logo">Wissam Salloum</div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="portfolio.html" class="active">Portfolio</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="assets/logo.png" alt="Wissam Photography logo" onerror="this.style.display='none'">
+        <span class="brand-text">Wissam Photography</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" data-nav>Home</a>
+        <a href="portfolio.html" data-nav>Portfolio</a>
+        <a href="sessions.html" data-nav>Sessions</a>
+        <a href="about.html" data-nav>About</a>
+        <a href="contact.html" data-nav>Contact</a>
+        <a href="booking.html" data-nav>Booking</a>
       </nav>
     </div>
   </header>
 
-  <section class="portfolio-section">
-    <div class="container">
-      <h1>Portfolio</h1>
-      <p>Explore a curated collection of my favourite photography projects.</p>
-      <div class="grid-gallery">
-        <img src="images/car1.jpg" alt="Car Photography 1">
-        <img src="images/lifestyle1.jpg" alt="Lifestyle Photography 1">
-        <img src="images/commercial1.jpg" alt="Commercial Photography 1">
-        <img src="images/car2.jpg" alt="Car Photography 2">
-        <img src="images/lifestyle2.jpg" alt="Lifestyle Photography 2">
-        <img src="images/commercial2.jpg" alt="Commercial Photography 2">
+  <main class="page">
+    <section class="section portfolio-redesign">
+      <div class="portfolio-header reveal">
+        <h2>Portfolio</h2>
+        <p class="lead">A curated collection across five specialties, each shown as a focused visual set.</p>
       </div>
-    </div>
-  </section>
 
-  <footer class="main-footer">
-    <div class="container">
-      <p>© 2025 Wissam Salloum. All rights reserved.</p>
-      <div class="social-icons">
-        <a href="https://instagram.com/wissam.jpg" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:wissam.a.salloum@gmail.com"><i class="fas fa-envelope"></i></a>
+      <div class="portfolio-categories">
+        <article class="portfolio-block card reveal delay-1">
+          <div class="portfolio-meta">
+            <p class="tag">Portrait</p>
+            <h3>Golden Hour Editorials</h3>
+            <p>Soft light portrait sessions with cinematic color grading and natural direction.</p>
+          </div>
+          <div class="portfolio-images">
+            <figure class="portfolio-shot feature"><img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1200&q=80" alt="Portrait with flowers"></figure>
+            <figure class="portfolio-shot"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=900&q=80" alt="Close portrait with natural makeup"></figure>
+            <figure class="portfolio-shot"><img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=900&q=80" alt="Smiling portrait in warm light"></figure>
+          </div>
+        </article>
+
+        <article class="portfolio-block card reveal delay-2">
+          <div class="portfolio-meta">
+            <p class="tag">Automotive</p>
+            <h3>Dusk Performance Series</h3>
+            <p>Rolling and static captures designed for owners, dealerships, and car-focused brands.</p>
+          </div>
+          <div class="portfolio-images">
+            <figure class="portfolio-shot feature"><img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=80" alt="Car front view at dusk"></figure>
+            <figure class="portfolio-shot"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80" alt="Automotive detail shot at sunset"></figure>
+            <figure class="portfolio-shot"><img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=900&q=80" alt="Automotive side profile in city"></figure>
+          </div>
+        </article>
+
+        <article class="portfolio-block card reveal delay-3">
+          <div class="portfolio-meta">
+            <p class="tag">Lifestyle</p>
+            <h3>City Story Frames</h3>
+            <p>Real movement, ambient light, and location-driven storytelling for a lived-in look.</p>
+          </div>
+          <div class="portfolio-images">
+            <figure class="portfolio-shot feature"><img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1200&q=80" alt="Street lifestyle scene"></figure>
+            <figure class="portfolio-shot"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80" alt="Lifestyle portrait in city"></figure>
+            <figure class="portfolio-shot"><img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=900&q=80" alt="Lifestyle black and white portrait"></figure>
+          </div>
+        </article>
+
+        <article class="portfolio-block card reveal delay-1">
+          <div class="portfolio-meta">
+            <p class="tag">Architecture</p>
+            <h3>Spatial Design Collection</h3>
+            <p>Structured compositions that highlight geometry, material texture, and thoughtful use of light.</p>
+          </div>
+          <div class="portfolio-images">
+            <figure class="portfolio-shot feature"><img src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?auto=format&fit=crop&w=1200&q=80" alt="Modern architecture exterior shot"></figure>
+            <figure class="portfolio-shot"><img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80" alt="Modern interior architecture with clean lines"></figure>
+            <figure class="portfolio-shot"><img src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?auto=format&fit=crop&w=900&q=80" alt="Contemporary house exterior at blue hour"></figure>
+          </div>
+        </article>
+
+        <article class="portfolio-block card reveal delay-2">
+          <div class="portfolio-meta">
+            <p class="tag">Landscape</p>
+            <h3>Wild Terrain Series</h3>
+            <p>Natural scenes captured for depth, atmosphere, and location-first storytelling.</p>
+          </div>
+          <div class="portfolio-images">
+            <figure class="portfolio-shot feature"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80" alt="Mountain landscape at sunset"></figure>
+            <figure class="portfolio-shot"><img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=900&q=80" alt="Forest landscape path in morning light"></figure>
+            <figure class="portfolio-shot"><img src="https://images.unsplash.com/photo-1464822759844-d150ad6d1e7e?auto=format&fit=crop&w=900&q=80" alt="Alpine landscape with lake reflection"></figure>
+          </div>
+        </article>
       </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-wrap">
+      <div>Wissam Photography</div>
+      <div><a href="mailto:wissam.a.salloum@gmail.com">wissam.a.salloum@gmail.com</a></div>
     </div>
   </footer>
 
-  <a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
-  <script src="js/script.js"></script>
+  <script src="assets/main.js"></script>
 </body>
 </html>

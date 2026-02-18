@@ -1,48 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Wissam Salloum Photography</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Wissam Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <header class="main-header">
-    <div class="container">
-      <div class="logo">Wissam Salloum</div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="about.html" class="active">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="assets/logo.png" alt="Wissam Photography logo" onerror="this.style.display='none'">
+        <span class="brand-text">Wissam Photography</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" data-nav>Home</a>
+        <a href="portfolio.html" data-nav>Portfolio</a>
+        <a href="sessions.html" data-nav>Sessions</a>
+        <a href="about.html" data-nav>About</a>
+        <a href="contact.html" data-nav>Contact</a>
+        <a href="booking.html" data-nav>Booking</a>
       </nav>
     </div>
   </header>
 
-  <section class="about-section">
-    <div class="container">
-      <h1>About Me</h1>
-      <p>Hello! I’m Wissam Salloum, a passionate photographer based in the UAE, specialising in automotive, lifestyle, and commercial photography. My mission is to capture authentic, striking visuals that tell a story and leave a lasting impression.</p>
-      <p>Whether it's a high-performance car, a candid portrait, or a brand campaign, I bring creativity, precision, and personality into every shot. Let’s create something timeless together.</p>
-      <img src="images/about-me.jpg" alt="Wissam Salloum portrait" class="about-image">
-    </div>
-  </section>
-
-  <footer class="main-footer">
-    <div class="container">
-      <p>© 2025 Wissam Salloum. All rights reserved.</p>
-      <div class="social-icons">
-        <a href="https://instagram.com/wissam.jpg" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:wissam.a.salloum@gmail.com"><i class="fas fa-envelope"></i></a>
+  <main class="page">
+    <section class="hero">
+      <div class="reveal">
+        <h1>About The Photographer</h1>
+        <p>I am Wissam, the photographer behind Wissam Photography. My style combines documentary storytelling with a clean editorial finish so your gallery feels both authentic and timeless.</p>
+        <p>I focus on natural direction, great light, and honest connection. I specialize in portraits, automotive, and lifestyle photography with a bold but timeless look.</p>
+        <div class="button-row">
+          <a class="button primary" href="booking.html">Start Booking</a>
+          <a class="button ghost" href="contact.html">Contact Me</a>
+        </div>
       </div>
+      <div class="hero-card reveal delay-1">
+        <img src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&w=1200&q=80" alt="Photographer holding camera">
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="reveal">What To Expect</h2>
+      <div class="grid grid-3">
+        <article class="card reveal delay-1">
+          <h3>Creative Direction</h3>
+          <p>You get guidance on wardrobe, locations, and timing so every session starts with a clear visual plan.</p>
+        </article>
+        <article class="card reveal delay-2">
+          <h3>Calm Session Flow</h3>
+          <p>I keep sessions relaxed and natural, giving prompts that create genuine emotion rather than stiff posing.</p>
+        </article>
+        <article class="card reveal delay-3">
+          <h3>Refined Delivery</h3>
+          <p>Your final gallery is color-consistent and polished, with easy download and sharing options.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-wrap">
+      <div>Wissam Photography</div>
+      <div><a href="mailto:wissam.a.salloum@gmail.com">wissam.a.salloum@gmail.com</a></div>
     </div>
   </footer>
 
-  <a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
-  <script src="js/script.js"></script>
+  <script src="assets/main.js"></script>
 </body>
 </html>
