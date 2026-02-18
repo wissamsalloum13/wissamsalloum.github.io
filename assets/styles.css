@@ -210,22 +210,6 @@ img {
   box-shadow: var(--shadow);
 }
 
-.hero-feature figcaption,
-.hero-small figcaption,
-.hero-wide figcaption {
-  position: absolute;
-  left: 10px;
-  bottom: 10px;
-  margin: 0;
-  font-size: 0.8rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #fff;
-  background: rgba(15, 17, 21, 0.7);
-  padding: 5px 9px;
-  border-radius: 999px;
-}
-
 .section {
   margin-top: 52px;
 }
