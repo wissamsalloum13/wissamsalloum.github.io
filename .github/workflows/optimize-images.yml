@@ -9,6 +9,7 @@ on:
       - "assets/images/**"
       - "scripts/optimize-images.mjs"
       - "package.json"
+      - ".github/workflows/optimize-images.yml"
 
 permissions:
   contents: write
