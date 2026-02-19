@@ -558,6 +558,17 @@ img {
   color: var(--accent-deep);
 }
 
+.package-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.package-card .price {
+  margin-top: auto;
+  padding-top: 12px;
+}
+
+
 .list-clean {
   margin: 0;
   padding-left: 18px;
