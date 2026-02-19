@@ -229,6 +229,7 @@ img {
   border-radius: 999px;
   padding: 11px 18px;
   font-weight: 600;
+  font-family: "Noe Text", "Lora", Georgia, serif;
   cursor: pointer;
   transition: transform 0.25s ease, background 0.25s ease;
 }
@@ -461,6 +462,7 @@ img {
   letter-spacing: normal;
   text-transform: none;
   font-weight: 600;
+  font-family: "Noe Text", "Lora", Georgia, serif;
   transition: transform 0.25s ease, background 0.25s ease;
 }
 
@@ -482,7 +484,7 @@ img {
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid var(--line);
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 4;
   min-height: 120px;
 }
 
